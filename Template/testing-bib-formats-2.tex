@@ -1,0 +1,151 @@
+ 
+\documentclass[letterpaper,notitlepage,11pt]{article}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{afterpage}
+\usepackage{amsfonts}
+\usepackage{dsfont}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage[affil-it]{authblk}
+\usepackage[bottom]{footmisc}
+%\usepackage[backref=true,backend=biber,natbib=true,hyperref=true]{biblatex}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=red,      
+    %urlcolor=blue,
+    citecolor=magenta,
+    urlcolor=[rgb]{0,0.5,0.5},
+}
+%\usepackage{natbib} % here I suppressed below line \usepackage{cite}
+%\def\style{apalike} 
+%\usepackage{natbib} % here I suppressed below line \usepackage{cite}
+%\usepackage[square,sort,comma]{natbib}
+%\usepackage[sort&compress]{natbib} % here I suppressed below line \usepackage{cite}
+%\usepackage[sort]{natbib} % here I suppressed below line \usepackage{cite}
+%\usepackage{apalike}
+%\usepackage[natbibapa]{apacite}
+\usepackage{/Users/freddyrojascama/Documents/Personal/SWP_BIB/bibfreddy_paper/Chicago}
+
+%\usepackage[style=authoryear]{biblatex}
+%\usepackage[numbers]{natbib} % here I suppressed below line \usepackage{cite}
+%\usepackage[authoryear, semicolon, sort&compress]{natbib} 
+%\usepackage[style=authoryear]{natbib} 
+
+%\usepackage[bibstyle=numeric,citestyle=authoryear,backend=biber]{biblatex}
+\usepackage{url}
+\usepackage{verbatim}
+\usepackage{float}
+\usepackage[english]{babel}
+\usepackage{geometry}
+\usepackage[pdftex]{graphicx}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{yfonts}
+\usepackage{enumerate}
+%\usepackage{enumitem}
+%\usepackage{cite}
+\usepackage[displaymath,mathlines,mathrefs, edtable]{lineno}
+\usepackage{theoremref}
+\usepackage{booktabs}
+\usepackage[export]{adjustbox}
+\DeclareSymbolFontAlphabet{\mathcal} {symbols}
+\usepackage{calc}
+\usepackage{accents}
+\newcommand{\dbtilde}[1]{\accentset{\approx}{#1}}
+%\usepackage{stackengine}
+%\stackMath
+%footnote tables
+\usepackage{threeparttable}
+
+%COUNTER for PROGRAMS P1, P2
+\newcounter{defcounter}
+\setcounter{defcounter}{0}
+\newenvironment{myequation}{%
+\addtocounter{equation}{-1}
+\refstepcounter{defcounter}
+\renewcommand\theequation{P\thedefcounter}
+\begin{equation}}
+{\end{equation}}
+\setcounter{MaxMatrixCols}{10}
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{Bibliography}{References}
+\newtheorem{acknowledgement}[theorem]{Acknowledgement}
+\newtheorem{algorithm}[theorem]{Algorithm}
+\newtheorem{axiom}[theorem]{Axiom}
+\newtheorem{case}[theorem]{Case}
+\newtheorem{claim}{Claim}
+\newtheorem{conclusion}[theorem]{Conclusion}
+\newtheorem{condition}[theorem]{Condition}
+\newtheorem{conjecture}{Conjecture}
+\newtheorem{corollary}{Corollary}
+\newtheorem{criterion}{Criterion}
+\newtheorem{definition}{Definition}
+\newtheorem{example}{Example}
+\newtheorem{exercise}{Exercise}
+\newtheorem{lemma}{Lemma}
+\newtheorem{notation}{Notation}
+\newtheorem{problem}[theorem]{Problem}
+\newtheorem{proposition}{Proposition}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{solution}[theorem]{Solution}
+\newtheorem{summary}[theorem]{Summary}
+\newenvironment{proof}[1][Proof]{\noindent\textbf{#1.} }{\ \rule{0.5em}{0.5em}}
+\geometry{tmargin=2.2cm, lmargin=2.8cm, rmargin=2.8cm, bmargin=2.5cm}
+\renewcommand{\baselinestretch}{1.3}
+\parskip=1.1mm
+\renewcommand{\listtablename}{List of Tables}
+\afterpage{\clearpage}
+\renewcommand{\thefootnote}{\arabic{footnote}}
+\renewcommand{\figurename}{Figures}
+\renewcommand{\tablename}{Tables}
+%\newcommand{\subscript}[2]{$#1 _ #2$}
+%\renewcommand{\labelenumi}{\arabic{enumi}. }
+%Library
+\newcommand{\myreferences}{/Users/freddyrojascama/Documents/Personal/SWP_BIB/bibfreddy_paper/references2019finInc}
+%\graphicspath{{./figures_png/}}
+
+
+%\author{Freddy A. Rojas Cama \\
+%Rutgers University}
+%\date{\today}
+%\title{Effect of Mutualization and Collateralization on Credit Default Swaps Premium}
+\author{Freddy A. Rojas Cama%
+\thanks{I want to thank Bruce Mizrach for his advice and support throughout this project. I also thank Todd Keister, Yuliyan Mitkov, Izumi Ryuichiro, Marola Castillo and participants at seminar presentation at Rutgers University for their insightful comments and suggestions. I also acknowledge all comments at Midwest Macroeconomic Economic Conference that took place in Nashville, Tennessee in November 2-4th, 2018 and also at Eastern Economic Association NYC. February 28th to March 2nd, 2019. All remaining errors are mine. Electronic address: \texttt{frcama@bau.edu}}}
+\affil{Bay Atlantic University \\\ Bah\c{c}e\c{s}ehir University}
+\date{\today}
+\title{The Effect of Mutualization and Collateralization on Credit Default Swaps Premium}
+\begin{document}
+\maketitle
+\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \  \ \ \ \ \ \ \ \ \ \ \ \   \ \href{https://drive.google.com/open?id=1KYgEwyFpzxbNWiHegJtg8kxBpsU8b4Pf}{[Last version available here]} 
+%\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \  \ \ \ \ \ \ \ \ \   \ {\Large [Draft - comments welcome!]}
+\begin{abstract}
+
+\citeNP{K14} applied \cite{Dablaetal14}
+
+\vspace{0.2ex}
+\textit{Keywords: price discovery; financial economics; clearing; credit default swaps; collateralization; mutualization; OTC; risk premium; CCP. JEL codes: G0; G1.}
+\end{abstract}
+%\thanks{I enormously thank to my advisor Bruce Mizrach for introducing me to the fascinating world of derivatives.}
+%Literature mostly analyzes clearing in exchange markets and assumes that terms of trade are invariant to policies
+%I specifically study the interplay between clearing practices and pricing of the asset in a theoretical framework that allows excessive leverage of short positions
+%\setcounter{page}{0}
+
+\bigskip \newpage 
+
+\shortciteN{K14} applied \shortciteN{Dablaetal14}
+
+
+%\tableofcontents
+
+\bigskip \newpage 
+
+\bibliography{\myreferences}
+%\bibliographystyle{apalike}
+\bibliographystyle{/Users/freddyrojascama/Documents/Personal/SWP_BIB/bibfreddy_paper/ChicagoFred}.
+
+\end{document}
